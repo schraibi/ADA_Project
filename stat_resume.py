@@ -1,6 +1,6 @@
 from pyspark import SparkConf, SparkContext
 from pyspark.sql import SQLContext
-from pyspark.sql.functions import mean
+from pyspark.sql.functions import desc
 conf = SparkConf().setAppName("building a warehouse")
 sc = SparkContext(conf=conf)
 sqlContext = SQLContext(sc)
@@ -28,7 +28,7 @@ for i in [0, 1, 2]:
     text1 = text0.map(lambda tag: (tag.lower(),1)).reduceByKey(lambda x,y: x+y)
     
     # Keep 1000 more used tags
-    first_rows = text1.toDF().sort(F.desc("_2")).limit(1000)
+    first_rows = text1.toDF().sort(desc("_2")).limit(1000)
     first_rows.write.save("hdfs:///user/prado/tags_per_sent_"+ str(i) +".parquet", mode = 'overwrite', format = "parquet")
 
     
