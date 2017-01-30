@@ -4,10 +4,10 @@
 ## Machine learning pipeline
 
 We follow a standard pipeline using Naive Bayes multiclassification method that trains on 20% of the dataset and predict the 80% others.## Geo-localizationAny localization information was given in our dataset, then we decided to find it by ourselves. The algorithm is based on the tag list of every instagram. The code can be found in localization.py
-## VisualizationOur final step is to create a cartography of Switzerland that we can visualize. You can see all the result in the file Présentation.ipynb, and for more details about how the visualization were done (the code), all the necessary is in visualization.ipynb
-
+## VisualizationOur final step is to create a cartography of Switzerland that we can visualize. You can see all the result in the file Presentation.ipynb, and for more details about how the visualization were done (the code), all the necessary is in visualization.ipynb. 
+A visualization example can be seen [clicking here] (https://rawgit.com/schraibi/ADA_Project/master/canton_sentiments.html)
 
 ## Conclusion
 
-Finally, to see all the pipeline in one script, in_one_script.ipynb resume the all reasoning, all the functions used in in_one_script.ipynb are concatenated in functions.py. Before all, this project’s aim was to introduce myself to big data calculus and learn Spark a language that can parallelize algorithms. Even if the final results are not relevant, the only fact that all the steps above mentioned have been run on the almost 10-millions instagrams is a success. Don’t forget to see the ‘Présentation’ file that give a better idea of what was done.
+Finally, to see all the pipeline in one script, in_one_script.ipynb resume the all reasoning, all the functions used in in_one_script.ipynb are concatenated in functions.py. Before all, this project’s aim was to introduce myself to big data calculus and learn Spark a language that can parallelize algorithms. Even if the final results are not relevant, the only fact that all the steps above mentioned have been run on the almost 10-millions instagrams is a success. Don’t forget to see the Presentation.py file that give a better idea of what was done.
 
