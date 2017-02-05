@@ -17,7 +17,9 @@ We have a look now at the results more in details.
 ## Confusion matrix
 
 [ 293970.,   43401.,   12564.]
+
 [  20855.,   50214.,    5337.]
+
 [   6086.,    1484.,   18547.]
 
 The classifier has acceptable results, but it has from far better results for positive prediction.
